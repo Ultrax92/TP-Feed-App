@@ -48,5 +48,5 @@ export const ListOfAvatars = () => {
                 decelerationRate='fast'
             />
         </View>
-    )
+    );
 };

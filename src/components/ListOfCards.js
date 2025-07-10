@@ -23,7 +23,7 @@ export const ListOfCards = () => {
             "itemId": 101,
             "authorId": 11,
             "timeStamp": "2 hrs ago",
-            "url": "https://images.unsplash.com",
+            "url": "https://images.pexels.com/photos/20340988/pexels-photo-20340988.jpeg",
             "likes": "28",
             "conversations": "12"
         },
@@ -31,7 +31,7 @@ export const ListOfCards = () => {
             "itemId": 102,
             "authorId": 7,
             "timeStamp": "1 week ago",
-            "url": "https://images.unsplash.com",
+            "url": "https://images.pexels.com/photos/32924876/pexels-photo-32924876.jpeg",
             "likes": "42",
             "conversations": "48"
         },
@@ -39,7 +39,7 @@ export const ListOfCards = () => {
             "itemId": 103,
             "authorId": 3,
             "timeStamp": "4 hrs ago",
-            "url": "https://images.unsplash.com",
+            "url": "https://images.pexels.com/photos/32518841/pexels-photo-32518841.jpeg",
             "likes": "34",
             "conversations": "3"
         },
@@ -47,7 +47,7 @@ export const ListOfCards = () => {
             "itemId": 104,
             "authorId": 12,
             "timeStamp": "10 weeks ago",
-            "url": "https://images.unsplash.com",
+            "url": "https://images.pexels.com/photos/32844898/pexels-photo-32844898.jpeg",
             "likes": "82",
             "conversations": "62"
         },
@@ -55,7 +55,7 @@ export const ListOfCards = () => {
             "itemId": 105,
             "authorId": 5,
             "timeStamp": "3 hrs ago",
-            "url": "https://images.unsplash.com",
+            "url": "https://images.pexels.com/photos/32768989/pexels-photo-32768989.jpeg",
             "likes": "60",
             "conversations": "5"
         },
@@ -63,7 +63,7 @@ export const ListOfCards = () => {
             "itemId": 106,
             "authorId": 1,
             "timeStamp": "1 month ago",
-            "url": "https://images.unsplash.com",
+            "url": "https://images.pexels.com/photos/3380151/pexels-photo-3380151.jpeg",
             "likes": "10",
             "conversations": "153"
         },
@@ -71,15 +71,15 @@ export const ListOfCards = () => {
             "itemId": 107,
             "authorId": 6,
             "timeStamp": "1 day ago",
-            "url": "https://images.unsplash.com",
+            "url": "https://images.pexels.com/photos/17741885/pexels-photo-17741885.jpeg",
             "likes": "52",
-            "conversations": "12"
+            "conversations": "19"
         },
         {
             "itemId": 108,
             "authorId": 9,
             "timeStamp": "5 hrs ago",
-            "url": "https://images.unsplash.com",
+            "url": "https://images.pexels.com/photos/10106075/pexels-photo-10106075.jpeg",
             "likes": "79",
             "conversations": "16"
         },
@@ -94,5 +94,5 @@ export const ListOfCards = () => {
                 showsVerticalScrollIndicator={false}
             />
         </View>
-    )
+    );
 };
