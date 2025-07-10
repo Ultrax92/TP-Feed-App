@@ -1,10 +1,15 @@
 import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { View, Text } from "react-native";
+import { useHeaderHeight } from "@react-navigation/elements";
 
 export const Login = () => {
+    const headerHeight = useHeaderHeight();
     return (
-        <View>
-            <Text>this will be the login screen</Text>
-        </View>
+        <SafeAreaView style={{ flex: 1, paddingTop: headerHeight }}>
+            <View>
+                <Text style={{ fontFamily: "Poppins_400Regular" }}>this will be the login screen</Text>
+            </View>
+        </SafeAreaView>
     );
 };

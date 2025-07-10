@@ -39,8 +39,15 @@ function Home() {
       },
       tabBarActiveTintColor: "#25A0B0",
       tabBarInactiveTintColor: "#000000",
+      headerTransparent: true,
+      headerTitleAlign: "right",
+      headerTitleStyle: {
+        paddingTop: 140,
+        paddingBottom: 40,
+        textAlign: "left",
+        fontWeight: "bold",
+      },
     })}
-
     >
       <Tab.Screen name="Feed" component={Feed} />
       <Tab.Screen name="Conversations" component={Conversations} />
@@ -53,13 +60,21 @@ function Home() {
 
 export default function App() {
   const [userLoggedIn, setIsUserLoggedIn] = useState(true);
-  let [fontsLoaded] = useFonts ({
-  Poppins_400Regular,
-  Poppins_800Bold
+  let [fontsLoaded] = useFonts({
+    Poppins_400Regular,
+    Poppins_800Bold
   });
 
-  if (!fontsLoaded) {
-    return <AppLoading/>;
+  // if (!fontsLoaded) {
+  //   return <AppLoading/>;
+  // }
+
+  if (fontsLoaded) {
+    return (
+      <View>
+        <Text>Loading fonts...</Text>
+      </View>
+    )
   }
 
   return (
