@@ -10,6 +10,7 @@ import { AddPost } from './src/surfaces/AddPost';
 import { Favorites } from './src/surfaces/Favorites';
 import { Profile } from './src/surfaces/Profile';
 import { Ionicons } from '@expo/vector-icons';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -48,18 +49,20 @@ export default function App() {
   const [userLoggedIn, setIsUserLoggedIn] = useState(true);
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        {!userLoggedIn ? (
-          <Stack.Screen name="Login" component={Login} />
-        ) : (
-          <Stack.Screen
-            name="Home"
-            component={Home}
-            options={{ headerShown: false }}
-          />
-        )}
-      </Stack.Navigator>
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Stack.Navigator>
+          {!userLoggedIn ? (
+            <Stack.Screen name="Login" component={Login} />
+          ) : (
+            <Stack.Screen
+              name="Home"
+              component={Home}
+              options={{ headerShown: false }}
+            />
+          )}
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
