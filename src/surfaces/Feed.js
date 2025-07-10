@@ -8,7 +8,7 @@ export const Feed = () => {
     return (
         <SafeAreaView style={{ flex: 1, paddingTop: headerHeight }}>
             <View>
-                <Text>this will be the feed screen</Text>
+                <Text style={{ fontFamily: "Poppins_400Regular" }}>this will be the feed screen</Text>
             </View>
         </SafeAreaView>
     );

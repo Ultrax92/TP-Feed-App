@@ -11,6 +11,12 @@ import { Favorites } from './src/surfaces/Favorites';
 import { Profile } from './src/surfaces/Profile';
 import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import AppLoading from 'expo-app-loading';
+import {
+  useFonts,
+  Poppins_400Regular,
+  Poppins_800Bold
+} from "@expo-google-fonts/poppins";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -47,6 +53,14 @@ function Home() {
 
 export default function App() {
   const [userLoggedIn, setIsUserLoggedIn] = useState(true);
+  let [fontsLoaded] = useFonts ({
+  Poppins_400Regular,
+  Poppins_800Bold
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading/>;
+  }
 
   return (
     <SafeAreaProvider>
