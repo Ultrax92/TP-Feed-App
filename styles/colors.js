@@ -1,9 +1,11 @@
 export const colors = {
   accentStroke: "#25A0B0",
   black: "#000000",
-  grey: "#4E4E4E",
-  lightGrey: "#C4C4C4",
   white: "#FFFFFF",
-  pink: "#F5C8C6",
-  accentLines: "#EEF2E2",
+  gray: "#656565",
+  lightGray: "FAFAFA",
+  lightPink: "#FFE1E0",
+  lightCyan: "#E1F6F4",
+  lightGreen: "#DCF8C6",
+  borderLightGreen: "#EEF2E2",
 };

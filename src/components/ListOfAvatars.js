@@ -42,7 +42,7 @@ export const ListOfAvatars = () => {
         renderItem={renderItem}
         keyExtractor={(item) => item?.id?.toString()}
         horizontal={true}
-        ListHeaderComponents={<ListHeaderComponents />}
+        ListHeaderComponent={<ListHeaderComponents />}
         showsHorizontalScrollIndicator={false}
         snapToInterval={86}
         decelerationRate="fast"

@@ -1,5 +1,5 @@
-import { Image, Pressable, Text, View } from "react-native";
-import { FlatList } from "react-native-gesture-handler";
+import { FlatList, Image, Pressable, Text, View } from "react-native";
+import { colors } from "../../styles/colors";
 
 export const ListOfConvos = ({ navigation }) => {
   const userList = [
@@ -86,7 +86,7 @@ export const ListOfConvos = ({ navigation }) => {
               width: 67,
               height: 67,
               borderRadius: 35,
-              borderColor: "#000000",
+              borderColor: colors.black,
               borderWidth: 1,
               marginHorizontal: 17,
             }}
@@ -107,7 +107,7 @@ export const ListOfConvos = ({ navigation }) => {
           <Text style={{ fontSize: 14, paddingBottom: 9 }}>
             {currentUser.name}
           </Text>
-          <Text style={{ color: "#656565", width: "65%" }}>{item.text}</Text>
+          <Text style={{ color: colors.gray, width: "65%" }}>{item.text}</Text>
         </View>
       </Pressable>
     );

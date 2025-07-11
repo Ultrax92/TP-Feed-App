@@ -1,4 +1,5 @@
 import { createStackNavigator } from "@react-navigation/stack";
+import { colors } from "../../styles/colors";
 import { Conversations } from "./Conversations";
 import { Messages } from "./Messages";
 
@@ -9,7 +10,7 @@ export const ConversationsNavigations = () => {
     <Stack.Navigator
       screenOptions={{
         headerBackTitleVisible: false,
-        headerTintColor: "#000000",
+        headerTintColor: colors.black,
         headerTransparent: true,
         headerTitleAlign: "left",
         headerStyle: {

@@ -1,4 +1,5 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
+import { colors } from "../../styles/colors";
 
 export const ListOfMessages = () => {
   const messages = {
@@ -58,7 +59,7 @@ export const ListOfMessages = () => {
 
 const styles = StyleSheet.create({
   text: {
-    backgroundColor: "#FAFAFA",
+    backgroundColor: colors.lightGray,
     borderBottomRightRadius: 20,
     borderBottomLeftRadius: 20,
     fontSize: 14,
@@ -69,11 +70,11 @@ const styles = StyleSheet.create({
   textFrom: {
     borderTopLeftRadius: 20,
     alignSelf: "flex-end",
-    backgroundColor: "#DCF8C6",
+    backgroundColor: colors.lightGreen,
   },
   textTo: {
     borderTopRightRadius: 20,
     alignSelf: "flex-start",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: colors.white,
   },
 });

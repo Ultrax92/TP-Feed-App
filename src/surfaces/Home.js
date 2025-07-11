@@ -47,7 +47,7 @@ export const Home = () => {
         component={ConversationsBase}
         options={{
           tabBarIcon: ({ size }) => (
-            <Ionicons name="chatbox-outline" color="#000000" size={size} />
+            <Ionicons name="chatbox-outline" color={colors.black} size={size} />
           ),
         }}
         listeners={({ navigation }) => ({

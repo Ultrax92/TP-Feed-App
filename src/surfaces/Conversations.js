@@ -4,6 +4,7 @@ import React from "react";
 import { View } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { colors } from "../../styles/colors";
 import { ListOfConvos } from "../components/ListOfConvos";
 
 export const Conversations = ({ navigation }) => {
@@ -18,7 +19,7 @@ export const Conversations = ({ navigation }) => {
           height: 570,
           borderRadius: 155,
           borderWidth: 1,
-          borderColor: "#EEF2E2",
+          borderColor: colors.borderLightGreen,
           position: "absolute",
           top: 210,
           left: -160,
@@ -31,7 +32,7 @@ export const Conversations = ({ navigation }) => {
           height: 570,
           borderRadius: 155,
           borderWidth: 1,
-          borderColor: "#EEF2E2",
+          borderColor: colors.borderLightGreen,
           position: "absolute",
           top: 210,
           left: -160,
@@ -44,7 +45,7 @@ export const Conversations = ({ navigation }) => {
           height: 570,
           borderRadius: 155,
           borderWidth: 1,
-          borderColor: "#EEF2E2",
+          borderColor: colors.borderLightGreen,
           position: "absolute",
           top: 210,
           left: -160,
@@ -60,8 +61,8 @@ export const Conversations = ({ navigation }) => {
               paddingLeft: 40,
               marginHorizontal: 17,
               borderRadius: 15,
-              backgroundColor: "#FFFFFF",
-              shadowColor: "#000000",
+              backgroundColor: colors.white,
+              shadowColor: colors.black,
               shadowOffset: { width: 0, height: 4 },
               shadowOpacity: 0.1,
               shadowOpacity: 9,
@@ -73,7 +74,7 @@ export const Conversations = ({ navigation }) => {
           <Ionicons
             name="search"
             size={24}
-            color="#000000"
+            color={colors.black}
             style={{ position: "absolute", left: 28, top: 6 }}
           />
         </View>

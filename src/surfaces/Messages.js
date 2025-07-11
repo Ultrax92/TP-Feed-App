@@ -1,6 +1,7 @@
 import { useHeaderHeight } from "@react-navigation/elements";
 import { Image, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { colors } from "../../styles/colors";
 import { ListOfMessages } from "../components/ListOfMessages";
 
 export const Messages = ({ route }) => {
@@ -14,7 +15,7 @@ export const Messages = ({ route }) => {
             position: "absolute",
             top: 40,
             left: "2%",
-            backgroundColor: "#E1F6F4",
+            backgroundColor: colors.lightCyan,
             width: "96%",
             height: 255,
             borderRadius: 34,
@@ -26,7 +27,7 @@ export const Messages = ({ route }) => {
             height: 570,
             borderRadius: 155,
             borderWidth: 1,
-            borderColor: "#FFFFFF",
+            borderColor: colors.white,
             position: "absolute",
             top: 250,
             left: -300,
@@ -39,7 +40,7 @@ export const Messages = ({ route }) => {
             height: 570,
             borderRadius: 155,
             borderWidth: 1,
-            borderColor: "#FFFFFF",
+            borderColor: colors.white,
             position: "absolute",
             top: 190,
             left: -290,
@@ -58,7 +59,7 @@ export const Messages = ({ route }) => {
               width: 84,
               height: 84,
               borderRadius: 35,
-              borderColor: "#000000",
+              borderColor: colors.black,
               transform: [{ rotate: "-45deg" }],
               position: "absolute",
               top: -3,

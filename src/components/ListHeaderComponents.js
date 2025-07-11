@@ -1,6 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { Pressable, View } from "react-native";
+import { colors } from "../../styles/colors";
 
 export const ListHeaderComponents = () => {
   return (
@@ -13,7 +14,7 @@ export const ListHeaderComponents = () => {
         }}
       >
         <LinearGradient
-          colors={["#FFE1E0", "#E1F6F4"]}
+          colors={[colors.lightPink, colors.lightCyan]}
           style={{
             borderRadius: 28,
             width: "100%",
@@ -22,7 +23,7 @@ export const ListHeaderComponents = () => {
             alignItems: "center",
           }}
         >
-          <Ionicons name="add" size={30} color={"#000000"} />
+          <Ionicons name="add" size={30} color={colors.black} />
         </LinearGradient>
       </View>
     </Pressable>
