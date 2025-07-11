@@ -8,6 +8,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { useState } from "react";
 import "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import { ConversationsNavigations } from "./src/surfaces/ConversationsNavigations";
 import { Home } from "./src/surfaces/Home";
 import { Login } from "./src/surfaces/Login";
 
@@ -39,11 +40,18 @@ export default function App() {
           {!userLoggedIn ? (
             <Stack.Screen name="Login" component={Login} />
           ) : (
-            <Stack.Screen
-              name="Home"
-              component={Home}
-              options={{ headerShown: false }}
-            />
+            <>
+              <Stack.Screen
+                name="Home"
+                component={Home}
+                options={{ headerShown: false }}
+              />
+              <Stack.Screen
+                name="ConversationsNav"
+                component={ConversationsNavigations}
+                options={{ headerShown: false }}
+              />
+            </>
           )}
         </Stack.Navigator>
       </NavigationContainer>

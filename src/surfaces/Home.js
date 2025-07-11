@@ -1,12 +1,14 @@
 import { Ionicons } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { AddPost } from ".//AddPost";
-import { Conversations } from "./Conversations";
+import { View } from "react-native";
+import { colors } from "../../styles/colors";
+import { AddPost } from "./AddPost";
 import { Favorites } from "./Favorites";
 import { Feed } from "./Feed";
 import { Profile } from "./Profile";
 
 const Tab = createBottomTabNavigator();
+const ConversationsBase = () => <View style={{ flex: 1 }} />;
 
 export const Home = () => {
   return (
@@ -25,20 +27,36 @@ export const Home = () => {
           }
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: "#25A0B0",
-        tabBarInactiveTintColor: "#000000",
+        tabBarActiveTintColor: colors.accentStroke,
+        tabBarInactiveTintColor: colors.black,
+        tabBarShowLabel: true,
         headerTransparent: true,
-        headerTitleAlign: "right",
+        headerTitleAlign: "left",
+        headerStyle: {
+          height: 80,
+        },
         headerTitleStyle: {
-          paddingTop: 140,
-          paddingBottom: 40,
-          textAlign: "left",
           fontWeight: "bold",
+          fontSize: 24,
         },
       })}
     >
       <Tab.Screen name="Feed" component={Feed} />
-      <Tab.Screen name="Conversations" component={Conversations} />
+      <Tab.Screen
+        name="ConversationsMain"
+        component={ConversationsBase}
+        options={{
+          tabBarIcon: ({ size }) => (
+            <Ionicons name="chatbox-outline" color="#000000" size={size} />
+          ),
+        }}
+        listeners={({ navigation }) => ({
+          tabPress: (e) => {
+            e.preventDefault();
+            navigation.navigate("ConversationsNav");
+          },
+        })}
+      />
       <Tab.Screen name="AddPost" component={AddPost} />
       <Tab.Screen name="Favorites" component={Favorites} />
       <Tab.Screen name="Profile" component={Profile} />
