@@ -6,27 +6,27 @@ export const ListOfConvos = ({ navigation }) => {
     {
       id: 1,
       name: "Malena Tudi",
-      url: require("../../assets/user.png"),
+      url: "https://randomuser.me/api/portraits/men/1.jpg",
     },
     {
       id: 2,
       name: "Nymn",
-      url: require("../../assets/user.png"),
+      url: "https://randomuser.me/api/portraits/women/2.jpg",
     },
     {
       id: 3,
       name: "Pokimane",
-      url: require("../../assets/user.png"),
+      url: "https://randomuser.me/api/portraits/men/3.jpg",
     },
     {
       id: 4,
       name: "xQc",
-      url: require("../../assets/user.png"),
+      url: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       id: 5,
       name: "Shroud",
-      url: require("../../assets/user.png"),
+      url: "https://randomuser.me/api/portraits/men/5.jpg",
     },
   ];
 
@@ -99,7 +99,7 @@ export const ListOfConvos = ({ navigation }) => {
                 marginTop: 2,
                 marginLeft: 2,
               }}
-              source={currentUser.url}
+              source={{ uri: currentUser.url }}
             />
           </View>
         </View>
