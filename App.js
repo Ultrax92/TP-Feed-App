@@ -21,10 +21,6 @@ export default function App() {
     Poppins_800Bold,
   });
 
-  // if (!fontsLoaded) {
-  //   return <AppLoading/>;
-  // }
-
   if (fontsLoaded) {
     return (
       <View>
