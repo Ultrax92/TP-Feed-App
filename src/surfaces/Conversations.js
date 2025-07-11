@@ -4,6 +4,7 @@ import React from "react";
 import { View } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { ListOfConvos } from "../components/ListOfConvos";
 
 export const Conversations = ({ navigation }) => {
   const headerHeight = useHeaderHeight();
@@ -76,7 +77,7 @@ export const Conversations = ({ navigation }) => {
             style={{ position: "absolute", left: 28, top: 6 }}
           />
         </View>
-        {/* <ListOfConvos navigation={navigation} /> */}
+        <ListOfConvos navigation={navigation} />
       </View>
     </SafeAreaView>
   );
