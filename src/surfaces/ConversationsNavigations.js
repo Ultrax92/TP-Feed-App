@@ -1,5 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import { Conversations } from "./Conversations";
+import { Messages } from "./Messages";
 
 const Stack = createStackNavigator();
 
@@ -21,7 +22,7 @@ export const ConversationsNavigations = () => {
       }}
     >
       <Stack.Screen name="Conversations" component={Conversations} />
-      {/* <Stack.Screen
+      <Stack.Screen
         name="Messages"
         component={Messages}
         options={({ route }) => ({
@@ -35,7 +36,7 @@ export const ConversationsNavigations = () => {
             left: 120,
           },
         })}
-      /> */}
+      />
     </Stack.Navigator>
   );
 };

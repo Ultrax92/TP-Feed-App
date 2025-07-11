@@ -4,7 +4,7 @@ import { ListHeaderComponents } from "./ListHeaderComponents";
 export const ListOfAvatars = () => {
   const renderItem = ({ item }) => {
     return (
-      <Pressable onPress={() => console.log("Hello")}>
+      <Pressable>
         <Image
           style={{ height: 56, width: 56, borderRadius: 28, marginRight: 30 }}
           source={{
